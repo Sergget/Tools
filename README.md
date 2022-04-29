@@ -3,3 +3,4 @@
 
 1. [基于Hurricane Electrics的免费DDNS脚本](01_DDNS-HE/README.md)
 2. [BilibiliVideoDownload 下载文件夹整理工具](02_Chdir/README.md)
+3. [条形码生成器](03_Barcode_generate/README.md)

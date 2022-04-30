@@ -1,0 +1,7 @@
+Unreachable: http://bt.byr.cn/
+Status code: 403, url: https://account.chsi.com.cn/passport/login
+Status code: 403, url: https://dash.cloudflare.com/sign-up
+Status code: 403, url: https://id.docker.com/login/
+Status code: 418, url: https://accounts.douban.com/passport/login_popup
+Unreachable: https://www.facebook.com/
+Unreachable: ftp://ftp1.linuxidc.com/

@@ -20,3 +20,4 @@ https://my.freenom.com/clientarea.php
 ftp://ftp1.linuxidc.com/
 https://gengo.com/auth/form/login/
 https://zh.gengo.com/auth/form/login
+https://account.google.com/login

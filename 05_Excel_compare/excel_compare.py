@@ -3,9 +3,9 @@ import overview as ov
 import sheet as sh
 
 # 旧版本路径
-compared_version_path = "./05_Excel_compare/version_1.xlsx"
+compared_version_path = "./version_1.xlsx"
 #新版本路径
-review_version_path = "./05_Excel_compare/version_2.xlsx"
+review_version_path = "./version_2.xlsx"
 
 book_c = xw.Book(compared_version_path)
 book_r = xw.Book(review_version_path)

@@ -1,3 +1,4 @@
+import os
 import xlwings as xw
 
 class OrderError(IndexError):
@@ -102,12 +103,17 @@ def sheets_compare(sheet_compare,sheet_review):
     if change_logs!=[]:
         sheet_review.range(1,title_len+2).value = "变化点："
         sheet_review.range(2,title_len+2).value = change_logs_titles
-        log_start = 3
+        log_row = 3
         for log in change_logs:
-            sheet_review.range(log_start,title_len+2).value = log
-            log_start+=1
+            sheet_review.range(log_row,title_len+2).value = log
+            log_row+=1
 
 if __name__ == "__main__":
-    sheet = xw.Book("./05_Excel_compare/version_1.xlsx").sheets[1]
-    check_order(sheet)
-    sheets_compare(xw.Book("./05_Excel_compare/version_1.xlsx").sheets[1], xw.Book("./05_Excel_compare/version_2.xlsx").sheets[1])
+    filenames = os.listdir(".")
+    xlsx_list = []
+    for filename in filenames:
+        if filename[0:2]!="~$" and filename.endswith(".xlsx"):
+            xlsx_list.append(filename)
+            check_order(xw.Book(filename).sheets[1])
+    sheets_compare(xw.Book(xlsx_list[-2]).sheets[1],xw.Book(xlsx_list[-1]).sheets[1])
+    # sheets_compare(xw.Book("./version_1.xlsx").sheets[1], xw.Book("./version_2.xlsx").sheets[1])

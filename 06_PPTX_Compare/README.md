@@ -12,5 +12,5 @@
 
 ## 安装前
 
-- 安装python 3.10
-- 安装python-pptx、xlwings模块
+- 安装python 3.9
+- 安装python-pptx模块
